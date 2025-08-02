@@ -1,6 +1,6 @@
 {
   imports = [
-    ./hardware-configuration
-    ./nvidia
+    ./hardware-configuration.nix
+    ./nvidia.nix
   ];
 }

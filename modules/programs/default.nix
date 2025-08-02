@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./git
-    ./zsh
+    ./git.nix
+    ./zsh.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -23,6 +23,8 @@
 
     hyprshot
     hyprpicker
+
+    nautilus
   ];
 
   programs.hyprland.enable = true;
