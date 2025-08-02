@@ -6,12 +6,15 @@
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     enableLsColors = true;
+    loginShellInit = ''
+      if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
+        exec Hyprland
+      fi
+    '';
     shellAliases = {
-      ls = "ls -l";
       nixos-switch = "sudo nixos-rebuild switch --flake ~/couture/#couture";
       nixos-test = "sudo nixos-rebuild test --flake ~/couture/#couture";
       reboot = "sudo reboot now";
     };
-    loginShellInit = "Hyprland";
   };
 }
