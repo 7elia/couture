@@ -9,7 +9,9 @@
   programs.hyprland.enable = true;
 
   hj = {
-    packages = [
+    packages = with pkgs; [
+      hyprshot
+      hyprpicker
       inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     ];
 
@@ -108,6 +110,7 @@
           "$mainMod, X, exit"
           "$mainMod, E, exec, nautilus"
           "$mainMod, J, togglesplit"
+          "$mainMod, F, fullscreen"
 
           "$mainMod SHIFT, S, exec, hyprshot -m region --clipboard-only"
 
@@ -123,6 +126,11 @@
 
         bindr = [
           "$mainMod, Super_L, exec, killall rofi || rofi -show drun"
+        ];
+
+        bindm = [
+          "$mainMod, mouse:272, movewindow"
+          "$mainMod, mouse:273, resizewindow"
         ];
 
         windowrule = [

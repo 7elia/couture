@@ -16,14 +16,8 @@
 
   hj.packages = with pkgs; [
     rofi
-
     alacritty
-
-    hyprshot
-    hyprpicker
-
     nautilus
-
     killall
   ];
 

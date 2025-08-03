@@ -6,6 +6,7 @@
     ./boot.nix
     ./locale.nix
     ./networking.nix
+    ./shell.nix
     ./user.nix
   ];
 
