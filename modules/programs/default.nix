@@ -4,6 +4,7 @@
   imports = [
     ./fastfetch.nix
     ./git.nix
+    ./hyprland.nix
     ./zed.nix
     ./zsh.nix
   ];
