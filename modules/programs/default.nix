@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ./discord
+
     ./fastfetch.nix
     ./git.nix
     ./hyprland.nix
@@ -21,6 +23,8 @@
     hyprpicker
 
     nautilus
+
+    killall
   ];
 
   programs.firefox.enable = true;

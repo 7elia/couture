@@ -1,0 +1,105 @@
+@import url("https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/hidden.css");
+@import url("https://raw.codeberg.page/AllPurposeMat/Disblock-Origin/DisblockOrigin.theme.css");
+
+:root {
+    --vr-header-snippet-server-padding: 0px;
+}
+
+.visual-refresh {
+    --custom-channel-textarea-text-area-height: 56px;
+
+    .form_f75fb0 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8px 8px 8px;
+    }
+
+    .channelTextArea_f75fb0 {
+        margin-bottom: 0;
+    }
+
+    .base_b88801 {
+        position: static;
+        order: -1;
+        padding: 0 8px;
+        background-color: var(--chat-background-default);
+        transition: border-color 0.2s ease;
+        border: 1px solid var(--border-faint);
+        border-bottom: none;
+        border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    }
+
+    .stackedBars__74017 {
+        transition: border-color 0.2s ease;
+        border-color: var(--border-faint) !important;
+    }
+
+    .form_f75fb0:has(.base_b88801) {
+        .channelTextArea_f75fb0 {
+            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+        }
+        .stackedBars__74017 {
+            border-radius: 0;
+        }
+    }
+
+    .form_f75fb0:has(.channelTextArea__74017:focus-within) {
+        .base_b88801 {
+            border-color: var(--border-subtle);
+        }
+        .stackedBars__74017 {
+            border-color: var(--border-subtle) !important;
+        }
+    }
+
+    .icon_f34534.guildIcon__48112 {
+        border-radius: 50% !important;
+    }
+
+    section.panels_c48ade {
+        margin-left: 72px;
+        width: calc(100% - var(--space-xs) * 2 - 72px) !important;
+        .actionButtons_e131a9 button {
+            padding: 0;
+        }
+    }
+
+    .sidebarListRounded_c48ade {
+        border-top-left-radius: 0 !important;
+    }
+
+    .title__85643 {
+        visibility: hidden;
+    }
+}
+
+nav.guilds_c48ade {
+    margin: 0 !important;
+    height: 100%;
+}
+
+.bar_c38106 {
+    display: none;
+}
+
+.title_a7d72e {
+    -webkit-app-region: drag;
+}
+
+.sidebar_c48ade {
+    overflow: visible !important;
+    position: relative;
+}
+
+.sidebarList_c48ade {
+    margin-left: 72px;
+}
+
+.wrapper_ef3116 {
+    position: absolute;
+    height: calc(100vh - 65px);
+}
+
+[class^="stack_dbd263 scroller_ef3116"] {
+    padding-top: 16px !important;
+}

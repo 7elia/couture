@@ -104,7 +104,7 @@
       ];
 
       bindr = [
-        "$mainMod, Super_L, exec, rof -show drun"
+        "$mainMod, Super_L, exec, killall rofi || rofi -show drun"
       ];
 
       windowrule = [
