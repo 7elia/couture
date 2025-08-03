@@ -12,14 +12,6 @@
         smfh.follows = "";
       };
     };
-
-    hyprland = {
-      url = "github:hyprwm/Hyprland";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        systems.follows = "systems";
-      };
-    };
   };
 
   outputs =

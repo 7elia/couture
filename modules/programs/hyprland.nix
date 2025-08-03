@@ -1,20 +1,7 @@
-{
-  pkgs,
-  xlib,
-  inputs,
-  ...
-}:
+{ xlib, ... }:
 
 {
-  imports = [
-    inputs.hyprland.nixosModules.default
-  ];
-
-  programs.hyprland = {
-    enable = true;
-    package = pkgs.hyprland;
-    portalPackage = pkgs.xdg-desktop-portal-hyprland;
-  };
+  programs.hyprland.enable = true;
 
   hj.files.".config/hypr/hyprland.conf" = {
     generator = xlib.generators.toHyprlang {
