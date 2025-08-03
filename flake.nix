@@ -12,6 +12,15 @@
         smfh.follows = "";
       };
     };
+
+    rose-pine-hyprcursor = {
+      url = "github:ndom91/rose-pine-hyprcursor";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        systems.follows = "systems";
+        hyprlang.follows = "";
+      };
+    };
   };
 
   outputs =

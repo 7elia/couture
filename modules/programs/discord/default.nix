@@ -13,7 +13,7 @@
         minimizeToTray = false;
         arRPC = true;
         splashColor = "rgb(0, 0, 0)"; # TODO
-        openLinksWithElectron = true;
+        openLinksWithElectron = false;
         disableMinSize = true;
         hardwareVideoAcceleration = true;
       };

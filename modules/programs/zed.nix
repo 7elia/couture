@@ -7,6 +7,7 @@
 
       # LSPs and formatters
       hyprls
+      hyprlang
       nixd
       nil
       nixfmt
