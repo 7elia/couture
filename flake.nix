@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    systems.url = "github:nix-systems/x86_64-linux";
 
     hjem = {
       url = "github:feel-co/hjem";
@@ -11,18 +12,31 @@
         smfh.follows = "";
       };
     };
-  };
 
-  outputs = inputs: {
-    nixosConfigurations.couture = inputs.nixpkgs.lib.nixosSystem {
-      specialArgs = {
-        inherit inputs;
-        user = "elia";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        systems.follows = "systems";
       };
-
-      modules = [
-        ./modules
-      ];
     };
   };
+
+  outputs =
+    inputs:
+    let
+      xlib = import ./lib inputs.nixpkgs.lib;
+    in
+    {
+      nixosConfigurations.couture = inputs.nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs xlib;
+          user = "elia";
+        };
+
+        modules = [
+          ./modules
+        ];
+      };
+    };
 }
