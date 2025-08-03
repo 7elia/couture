@@ -5,6 +5,7 @@
     ./fastfetch.nix
     ./git.nix
     ./hyprland.nix
+    ./ssh.nix
     ./zed.nix
     ./zsh.nix
   ];
