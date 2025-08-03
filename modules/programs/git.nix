@@ -1,4 +1,10 @@
+{ pkgs, ... }:
+
 {
+  hj.packages = with pkgs; [
+    git-credential-manager
+  ];
+
   programs.git = {
     enable = true;
     config = {
@@ -39,12 +45,6 @@
         context = 3;
         renames = "copies";
         interHunkContext = 10;
-      };
-
-      credential = {
-        helper = "manager";
-        "https://github.com".username = "7elia";
-        credentialStore = "cache";
       };
     };
   };
