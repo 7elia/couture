@@ -2,23 +2,17 @@
 
 {
   imports = [
+    ./fastfetch.nix
     ./git.nix
+    ./zed.nix
     ./zsh.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [
+  hj.packages = with pkgs; [
     rofi
-    neofetch
 
-    hyprls
-    nixd
-    nil
-    nixfmt
-
-    zed-editor
-    diff-so-fancy
     alacritty
 
     hyprshot
@@ -27,6 +21,5 @@
     nautilus
   ];
 
-  programs.hyprland.enable = true;
   programs.firefox.enable = true;
 }
