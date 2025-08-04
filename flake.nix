@@ -31,7 +31,7 @@
     inputs:
     let
       xlib = import ./lib inputs.nixpkgs.lib;
-      colors = import ./modules/colors.nix;
+      colors = import ./colors.nix;
     in
     {
       nixosConfigurations.couture = inputs.nixpkgs.lib.nixosSystem {

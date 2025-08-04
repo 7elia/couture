@@ -19,6 +19,6 @@
       };
     };
 
-    files.".config/vesktop/settings/quickCss.css".text = builtins.readFile ./quickCss.css;
+    files.".config/vesktop/settings/quickCss.css".text = builtins.readFile ./../../assets/quickCss.css;
   };
 }
