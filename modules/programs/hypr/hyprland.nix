@@ -13,6 +13,7 @@
 
     value = {
       exec-once = [
+        "hyprpaper"
         "quickshell -p ${builtins.toString ./../../../shell}"
       ];
 
