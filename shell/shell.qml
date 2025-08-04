@@ -1,5 +1,14 @@
-import QtQuick;
-import Quickshell;
+import Quickshell
+import QtQuick
 
-ShellRoot {
+import "./Bar.qml"
+
+Scope {
+    id: root
+
+    Variants {
+        model: Quickshell.screens.filter(s => s.name === "DP-3")
+
+        Bar {}
+    }
 }

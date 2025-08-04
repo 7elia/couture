@@ -5,6 +5,9 @@
     packages = with pkgs; [
       zed-editor-fhs
 
+      # Required libraries for running LSPs
+      openssl
+
       # LSPs and formatters
       hyprls
       hyprlang

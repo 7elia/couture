@@ -31,11 +31,12 @@
     inputs:
     let
       xlib = import ./lib inputs.nixpkgs.lib;
+      colors = import ./modules/colors.nix;
     in
     {
       nixosConfigurations.couture = inputs.nixpkgs.lib.nixosSystem {
         specialArgs = {
-          inherit inputs xlib;
+          inherit inputs xlib colors;
           user = "elia";
         };
 

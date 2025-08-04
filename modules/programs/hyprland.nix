@@ -2,6 +2,7 @@
   pkgs,
   inputs,
   xlib,
+  colors,
   ...
 }:
 
@@ -32,6 +33,10 @@
           "XCURSOR_SIZE, 25"
         ];
 
+        exec-once = [
+          "quickshell -p ${builtins.toString ./../../shell}"
+        ];
+
         monitor = [
           "DP-1, 1920x1080@144, 0x0, 1"
           "DP-3, 1920x1080@240, 1920x-300, 1"
@@ -48,6 +53,7 @@
           border_size = 2;
           allow_tearing = true;
           # TODO: col.active_border, col.inactive_border
+          "col.active_border" = "rgb(${colors.secondary})";
           layout = "dwindle";
         };
 
@@ -106,6 +112,7 @@
 
         bind = [
           "$mainMod, N, exec, alacritty"
+          "$mainMod, I, exec, firefox"
           "$mainMod, Q, killactive"
           "$mainMod, X, exit"
           "$mainMod, E, exec, nautilus"
