@@ -32,7 +32,7 @@
         gaps_out = 5;
         border_size = 3;
         allow_tearing = true;
-        "col.active_border" = "rgb(${colors.bright_orange})";
+        "col.active_border" = "rgb(${colors.bright_orange}) rgb(${colors.orange}) 45deg";
         "col.inactive_border" = "rgb(${colors.gray})";
         layout = "dwindle";
       };
@@ -45,7 +45,7 @@
           enabled = true;
           range = 4;
           render_power = 3;
-          # TODO: color
+          color = "rgb(${colors.gray})";
         };
 
         blur = {

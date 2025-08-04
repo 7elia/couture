@@ -2,11 +2,6 @@
 
 My NixOS flake
 
-## Info
-
-- Editor: [zed](https://zed.dev)
-- Home management: [hjem](https://github.com/feel-co/hjem)
-
 ## Name
 
 [Nix](https://brawlhalla.wiki.gg/wiki/Nix) is a character from the fighting game

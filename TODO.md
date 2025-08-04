@@ -1,7 +1,7 @@
 # TODO
 
 - qt theme
-- vencord splash color
 - BAR BAR BAR
+- zsh hotkey fixes
 
 [gruvbox ports](https://github.com/morhetz/gruvbox-contrib)

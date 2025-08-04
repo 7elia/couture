@@ -17,7 +17,7 @@
         discordBranch = "stable";
         minimizeToTray = false;
         arRPC = true;
-        splashColor = "#${colors.bg4}"; # TODO
+        splashColor = "#${colors.bg4}";
         openLinksWithElectron = false;
         disableMinSize = true;
         hardwareVideoAcceleration = true;
