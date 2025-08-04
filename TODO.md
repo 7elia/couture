@@ -1,10 +1,7 @@
 # TODO
 
-- alacritty theme
-- rofi theme
-- firefox theme
 - qt theme
-- discord theme
 - vencord splash color
+- BAR BAR BAR
 
 [gruvbox ports](https://github.com/morhetz/gruvbox-contrib)

@@ -1,4 +1,9 @@
-{ pkgs, lib, ... }:
+{
+  pkgs,
+  lib,
+  colors,
+  ...
+}:
 
 {
   hj = {
@@ -12,7 +17,7 @@
         discordBranch = "stable";
         minimizeToTray = false;
         arRPC = true;
-        splashColor = "rgb(0, 0, 0)"; # TODO
+        splashColor = "#${colors.bg4}"; # TODO
         openLinksWithElectron = false;
         disableMinSize = true;
         hardwareVideoAcceleration = true;

@@ -8,6 +8,7 @@
     ./discord.nix
     ./fastfetch.nix
     ./git.nix
+    ./gtk.nix
     ./rofi.nix
     ./ssh.nix
     ./zed.nix

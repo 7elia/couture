@@ -93,9 +93,9 @@
       bind = [
         "$mainMod, N, exec, alacritty"
         "$mainMod, I, exec, firefox"
+        "$mainMod, E, exec, nautilus"
         "$mainMod, Q, killactive"
         "$mainMod, X, exit"
-        "$mainMod, E, exec, nautilus"
         "$mainMod, J, togglesplit"
         "$mainMod, F, fullscreen"
 
