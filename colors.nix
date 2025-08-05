@@ -21,11 +21,11 @@
   aqua = "689d6a";
   orange = "d65d0e";
 
-  bright_red = "fb4934";
-  bright_green = "b8bb26";
-  bright_yellow = "fabd2f";
-  bright_blue = "83a598";
-  bright_purple = "d3869b";
-  bright_aqua = "8ec07c";
-  bright_orange = "fe8019";
+  brightRed = "fb4934";
+  brightGreen = "b8bb26";
+  brightYellow = "fabd2f";
+  brightBlue = "83a598";
+  brightPurple = "d3869b";
+  brightAqua = "8ec07c";
+  brightOrange = "fe8019";
 }

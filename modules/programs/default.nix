@@ -9,6 +9,7 @@
     ./fastfetch.nix
     ./git.nix
     ./gtk.nix
+    ./qt.nix
     ./rofi.nix
     ./ssh.nix
     ./zed.nix
@@ -20,6 +21,7 @@
   hj.packages = with pkgs; [
     nautilus
     killall
+    pavucontrol
   ];
 
   programs.firefox.enable = true;

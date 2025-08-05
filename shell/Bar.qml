@@ -1,6 +1,8 @@
 import Quickshell
 import QtQuick
 
+import "./Appearance.qml"
+
 PanelWindow {
     required property var modelData
     screen: modelData
@@ -11,11 +13,27 @@ PanelWindow {
         right: true
     }
 
-    implicitHeight: 25
+    implicitHeight: 40
+    color: "transparent"
 
-    Text {
-        font.pointSize: 14
-        font.bold: true
-        text: "Hey"
+    Rectangle {
+        color: "transparent"
+
+        anchors {
+            fill: parent
+            margins: 4
+        }
+
+        border {
+            width: 3
+            color: Appearance.colors.brightAqua
+        }
+
+        radius: 15
+
+        Text {
+            text: "100%"
+            color: Appearance.colors.gray
+        }
     }
 }
