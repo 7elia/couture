@@ -12,6 +12,7 @@
     ./qt.nix
     ./rofi.nix
     ./ssh.nix
+    ./steam.nix
     ./zed.nix
     ./zsh.nix
   ];
@@ -23,24 +24,6 @@
     killall
     pavucontrol
   ];
-
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    localNetworkGameTransfers.openFirewall = true;
-    package = pkgs.steam.override {
-      extraEnv = {
-        MANGOHUD = true;
-        OBS_VKCAPTURE = true;
-        RADV_TEX_ANISO = 16;
-      };
-      extraLibraries =
-        p: with p; [
-          atk
-        ];
-    };
-  };
 
   programs.java.enable = true;
 
